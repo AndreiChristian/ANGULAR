@@ -1,0 +1,19 @@
+<p>LETS GET READY TO CLICK!</p>
+
+<button (click)="onIncrementCounter()">Click me</button>
+
+<p *ngIf="counterValue > 0; else NoClicks">
+  YOU CLICKED ME THERE IS NO GOING BACK NOW
+</p>
+
+<br />
+
+<ng-template #NoClicks>
+  <div>There are no clicks</div>
+</ng-template>
+
+<div *ngIf="counterValue > 0">
+  <div *ngFor="let click of clicks">
+    <div [ngClass]="{ fiverr: click > 5 }">{{ click }}</div>
+  </div>
+</div>

@@ -1,3 +1,11 @@
-<h2>Hello again</h2>
-<h2>I am the app-server component</h2>
-<app-servers></app-servers>
+<h4 [ngStyle]="{ backgroundColor: getColor() }">
+  The server is {{ serverStatus }}
+</h4>
+<p
+  [ngClass]="{
+    online: serverStatus === 'online',
+    offline: serverStatus === 'offline'
+  }"
+>
+  This is a server
+</p>

@@ -3,11 +3,10 @@
 </button>
 <input type="text" [(ngModel)]="serverName" />
 
-<p>{{ serverCreationStatus }}</p>
+<p *ngIf="serverCreated; else NoServer">ADDED SERVER</p>
 
-<!-- <p>{{ serverName }}</p> -->
+<ng-template #NoServer>
+  <p>No server is created at the moment!</p>
+</ng-template>
 
-<p>
-  The server {{ serverId }} is {{ getServerStatus() }} and
-  {{ serverStatus === "online" ? "working" : "dead" }}.
-</p>
+<app-server *ngFor="let server of servers"></app-server>
