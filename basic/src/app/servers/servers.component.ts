@@ -13,4 +13,26 @@ import { Component } from '@angular/core';
   //   `,
   // ],
 })
-export class ServersComponent {}
+export class ServersComponent {
+  serverId = 10;
+  serverStatus: 'online' | 'offline' = 'online';
+  allowNewServer: boolean = false;
+  serverCreationStatus = 'No server was created!';
+  serverName = 'TOTO';
+
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+  }
+
+  getServerStatus() {
+    return this.serverStatus;
+  }
+
+  onCreateSever() {
+    this.serverCreationStatus =
+      'New server created! The new server name is ' + this.serverName + '.';
+  }
+
+}

@@ -1,2 +1,13 @@
-<h2>I am the servers component!</h2>
-<p>I am generated with CLI</p>
+<button [disabled]="!allowNewServer" (click)="onCreateSever()">
+  ADD NEW SERVER!
+</button>
+<input type="text" [(ngModel)]="serverName" />
+
+<p>{{ serverCreationStatus }}</p>
+
+<!-- <p>{{ serverName }}</p> -->
+
+<p>
+  The server {{ serverId }} is {{ getServerStatus() }} and
+  {{ serverStatus === "online" ? "working" : "dead" }}.
+</p>
