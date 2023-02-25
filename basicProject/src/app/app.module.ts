@@ -6,6 +6,9 @@ import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipesListComponent } from './recipes/recipes-list/recipes-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingComponentComponent } from './shopping-list/shopping-component/shopping-component.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +16,13 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
     HeaderComponent,
     RecipesComponent,
     RecipesListComponent,
-    RecipeDetailComponent
+    RecipeDetailComponent,
+    RecipesItemComponent,
+    ShoppingListComponent,
+    ShoppingComponentComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
