@@ -1,0 +1,6 @@
+.col-xs-12 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 50%;
+}
