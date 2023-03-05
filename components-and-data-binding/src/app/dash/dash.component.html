@@ -1,1 +1,5 @@
-<p>dash works!</p>
+<div class="form">
+  <label>NAME</label> <input type="text" [(ngModel)]="newName" />
+  <label>AGE</label> <input type="number" [(ngModel)]="newAge" />
+  <button (click)="onLogInfo()">ADD</button>
+</div>

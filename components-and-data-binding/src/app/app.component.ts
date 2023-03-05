@@ -6,6 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  users: {
+    userName: string;
+    userAge: number;
+  }[] = [
+    {
+      userName: 'Max',
+      userAge: 34,
+    },
+    {
+      userName: 'Andrei',
+      userAge: 32,
+    },
+  ];
+
   serverElements = [
     {
       type: 'server',
