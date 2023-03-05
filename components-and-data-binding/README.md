@@ -29,3 +29,5 @@ we can do so using an alias.
 
 `<child-component *ngFor=" let post of posts " [onePost]=post  ></child-component>`
 `@Input("onePost") element:{....}`
+
+## Binding to Custom Events

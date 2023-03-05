@@ -1,6 +1,9 @@
 <div class="container">
   <h3>Add a new server</h3>
-  <app-cockpit></app-cockpit>
+  <app-cockpit
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBlueprintAdded($event)"
+  ></app-cockpit>
   <app-server
     *ngFor="let serverElement of serverElements"
     [serverElement]="serverElement"
