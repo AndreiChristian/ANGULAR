@@ -31,3 +31,15 @@ we can do so using an alias.
 `@Input("onePost") element:{....}`
 
 ## Binding to Custom Events
+
+## View encapsulation
+
+## Local References
+
+## View Child
+
+## Ng Content
+
+## Component Lifecycle
+
+- ngOnChanges 
