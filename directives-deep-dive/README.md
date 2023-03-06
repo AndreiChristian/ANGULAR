@@ -10,5 +10,3 @@ They are called like this because they sit on HTML elements just like normal atr
 
 They are called structural because they can affect the structure of the DOM. (ex: ngFor, ngIf)
 Important Note! We cannot have more than one structural directive on one element. For example, `ngFor` and `ngIf` together would not work.
-
-#### Creating our own attribute directive
