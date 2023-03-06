@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-dash',
@@ -9,7 +9,15 @@ export class DashComponent {
   newName: string = '';
   newAge: number = 0;
 
+  @Output() newPersonAdded = new EventEmitter<{
+    userName: string;
+    userAge: number;
+  }>();
+
   onLogInfo() {
-    console.log(`name:${this.newName}; age:${this.newAge}`);
+    this.newPersonAdded.emit({
+      userName: this.newName,
+      userAge: this.newAge,
+    });
   }
 }

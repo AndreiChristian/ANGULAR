@@ -2,4 +2,6 @@
     margin: 1vw;
     border: 1px solid black;
     padding: 1vw;
+    display: flex;
+    gap: 2vw;
 }

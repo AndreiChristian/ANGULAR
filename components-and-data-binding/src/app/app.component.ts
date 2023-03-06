@@ -46,4 +46,16 @@ export class AppComponent {
       content: blueprintData.blueprintContent,
     });
   }
+
+  onNewPersonAdded(userData: { userName: string; userAge: number }) {
+    this.users.push({
+      userName: userData.userName,
+      userAge: userData.userAge,
+    });
+  }
+
+  onDeleteUser(userName: any) {
+    this.users = this.users.filter((user) => user.userName !== userName);
+    console.log('user should be deleted', userName);
+  }
 }

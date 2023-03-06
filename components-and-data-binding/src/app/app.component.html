@@ -1,6 +1,10 @@
 <div class="container">
   <h1>Time to practice</h1>
-  <app-dash></app-dash>
+  <app-dash (newPersonAdded)="onNewPersonAdded($event)"></app-dash>
   <!-- <app-list></app-list> -->
-  <app-list *ngFor="let user of users" [userData]="user"></app-list>
+  <app-list
+    *ngFor="let user of users"
+    [userData]="user"
+    (deleteUser)="onDeleteUser($event)"
+  ></app-list>
 </div>
