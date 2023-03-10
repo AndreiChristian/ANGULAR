@@ -1,0 +1,8 @@
+.servers{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vh;
+}
