@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CounterService } from '../counter.service';
 import { UsersService } from '../users.service';
 
 @Component({

@@ -6,6 +6,6 @@ export class CounterService {
 
   increment() {
     this.counter++;
-    console.log(`Counter is now ${this.counter}`);
+    console.log(this.counter);
   }
 }
