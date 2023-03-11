@@ -9,7 +9,9 @@ import { ServersService } from '../servers.service';
   styleUrls: ['./server.component.css'],
 })
 export class ServerComponent implements OnInit {
-  server: { id: number; name: string; status: string };
+  server: { id: number; name: string; status: string } = null;
+  serverName: string = '';
+  serverStatus: string = '';
 
   constructor(
     private serversService: ServersService,
@@ -17,11 +19,16 @@ export class ServerComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    const id: number = +this.route.snapshot.params['id'];
-    console.log(id, typeof id);
+    const id = +this.route.snapshot.params['id'];
+    // console.log(this.serversService.getServer(id).name);
     this.server = this.serversService.getServer(id);
-    // this.route.params.subscribe((params: Params) => {
-    //   this.server = this.serversService.getServer(params['id']);
-    // });
+    this.serverName = this.server.name;
+    this.serverStatus = this.server.status;
+    this.route.params.subscribe((params: Params) => {
+
+      this.server = this.serversService.getServer(+params['id']);
+      this.serverName = this.server.name;
+      this.serverStatus = this.server.status;
+    });
   }
 }
