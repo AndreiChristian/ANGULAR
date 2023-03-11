@@ -18,7 +18,9 @@ export class ServersComponent implements OnInit {
 
   ngOnInit() {
     this.servers = this.serversService.getServers();
-    
+    for( let server of this.servers){
+      console.log(server.id)
+    }
   }
 
   onReload() {
