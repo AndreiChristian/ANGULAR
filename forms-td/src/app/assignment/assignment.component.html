@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                <div class="form-group">
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" ngModel name="email" required
+                        email class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="subscription">Choose a subscription</label>
+                    <select name="subscription" id="subscription" ngModel
+                        class="form-control">
+                        <option *ngFor="let subscription of subscriptions "
+                            [value]="subscription">{{subscription}}</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
