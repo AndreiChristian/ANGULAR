@@ -11,7 +11,7 @@
             required
             ngModel
             name="title"
-          />
+            />
         </div>
         <div class="form-group">
           <label for="content">Content</label>
@@ -20,14 +20,12 @@
             id="content"
             required
             ngModel
-            name="content"
-          ></textarea>
+            name="content"></textarea>
         </div>
         <button
           class="btn btn-primary"
           type="submit"
-          [disabled]="!postForm.valid"
-        >
+          [disabled]="!postForm.valid">
           Send Post
         </button>
       </form>
@@ -42,16 +40,22 @@
       |
       <button
         class="btn btn-danger"
-        [disabled]="loadedPosts.length < 1"
-        (click)="onClearPosts()"
-      >
+        [disabled]="loadedPosts.length <1"
+        (click)="onClearPosts()">
         Clear Posts
       </button>
     </div>
   </div>
   <div class="row">
     <div class="col-xs-12 col-md-6 col-md-offset-3">
-      <p>No posts available!</p>
+      <p *ngIf="loadedPosts.length<1 && !isFetching ">No posts available!</p>
+      <ul class="list-group" *ngIf="loadedPosts.length>=1" >
+        <li class="list-group-item" *ngFor="let post of loadedPosts">
+          <h3>{{post.title}}</h3>
+          <p>{{post.content}}</p>
+        </li>
+      </ul>
+      <p *ngIf="isFetching">Loading ....</p>
     </div>
   </div>
 </div>
