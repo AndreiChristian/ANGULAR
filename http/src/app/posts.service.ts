@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { map, Subject } from 'rxjs';
 import { Post } from './post.model';
 
 const firebaseLink: string =
@@ -10,6 +10,8 @@ const firebaseLink: string =
   providedIn: 'root',
 })
 export class PostsService {
+  error = new Subject<string>();
+
   constructor(private http: HttpClient) {}
 
   createAndStorePost(title: string, content: string) {
@@ -17,11 +19,15 @@ export class PostsService {
       title,
       content,
     };
-    this.http
-      .post<{ name: string }>(firebaseLink, postData)
-      .subscribe((responseData) => {
+
+    this.http.post<{ name: string }>(firebaseLink, postData).subscribe(
+      (responseData) => {
         console.log(responseData);
-      });
+      },
+      (error) => {
+        this.error.next(error.message);
+      }
+    );
   }
 
   fetchPosts() {
