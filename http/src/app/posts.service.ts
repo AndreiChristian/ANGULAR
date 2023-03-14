@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
 import { Post } from './post.model';
 
-const firebaseLink: string = ' add url from firebase here ';
+const firebaseLink: string =
+  'https://angular-first-http-default-rtdb.europe-west1.firebasedatabase.app/posts.json';
 
 @Injectable({
   providedIn: 'root',
