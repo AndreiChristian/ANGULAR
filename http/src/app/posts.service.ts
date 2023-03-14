@@ -4,7 +4,7 @@ import { map, Subject } from 'rxjs';
 import { Post } from './post.model';
 
 const firebaseLink: string =
-  'https://angular-first-http-default-rtdb.europe-west1.firebasedatabase.app/posts.json';
+  '';
 
 @Injectable({
   providedIn: 'root',
@@ -40,7 +40,7 @@ export class PostsService {
           }
         }
         return postsArray;
-      })
+      }, )
     );
   }
 
