@@ -1,8 +1,23 @@
 <mat-sidenav-container>
-    <mat-sidenav>
-        <p>I'm the sidenav!</p>
+    <mat-sidenav [opened]="openSideNav" role="navigation" #sidenav>
+        <p>JKSDNJKSDJNKDSJKNDJK</p>
     </mat-sidenav>
     <mat-sidenav-content>
-        <router-outlet></router-outlet>
+        <mat-toolbar color="primary">
+            <div class="logo"><button mat-icon-button
+                    (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <div>LOGO</div>
+            </div>
+            <div class="links">
+                <a routerLink="/training">Exercise</a>
+                <a routerLink="/signup">Signup</a>
+                <a routerLink="/login">Login</a>
+            </div>
+        </mat-toolbar>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
     </mat-sidenav-content>
 </mat-sidenav-container>

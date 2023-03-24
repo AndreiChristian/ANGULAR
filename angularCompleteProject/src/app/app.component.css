@@ -1,1 +1,28 @@
+mat-sidenav-container,main{
+    height: 100%;
+}
 
+.logo,.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.links{
+    gap: 1vh;
+}
+
+mat-toolbar{
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,a:active{
+    color: goldenrod;
+}
