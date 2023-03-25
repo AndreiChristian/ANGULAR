@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fitnesstracker-angularcomplete": {
+      "hosting": {
+        "angularCompleteProject": [
+          "fitnesstracker-angularcomplete"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fitnesstracker-angularcomplete"
+  }
+}
