@@ -1,0 +1,18 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+mat-dialog-content{
+    width: 40vw;
+}
+
+mat-progress-bar{
+    width: 80%;
+}
+
+p{
+    text-align: center;
+}
