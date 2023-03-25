@@ -8,8 +8,9 @@
         <div>LOGO</div>
     </div>
     <div class="links">
-        <a routerLink="/training">Exercise</a>
-        <a routerLink="/signup">Signup</a>
-        <a routerLink="/login">Login</a>
+        <a *ngIf="isAuth" routerLink="/training">Exercise</a>
+        <a *ngIf="!isAuth" routerLink="/signup">Signup</a>
+        <a *ngIf="!isAuth" routerLink="/login">Login</a>
+        <a *ngIf="isAuth">Logout</a>
     </div>
 </mat-toolbar>
