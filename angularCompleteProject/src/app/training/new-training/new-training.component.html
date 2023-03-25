@@ -1,1 +1,25 @@
-<p>new-training works!</p>
+<section>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h1>New Exercise</h1>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="fill">
+                <mat-label>Choose exercise type!</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let exercise of exercises"
+                        [value]="exercise.value">
+                        {{exercise.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            Choose an exercise from the list below and start your workout.
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="submit" mat-raised-button color="primary"
+                (click)="onStartTraining()">START</button>
+        </mat-card-actions>
+    </mat-card>
+</section>
