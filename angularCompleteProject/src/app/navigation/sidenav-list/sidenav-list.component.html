@@ -2,5 +2,5 @@
     <a mat-list-item  *ngIf="isAuth" routerLink="/training">Exercise</a>
     <a mat-list-item *ngIf="!isAuth" routerLink="/signup">Signup</a>
     <a mat-list-item *ngIf="!isAuth" routerLink="/login">Login</a>
-    <a mat-list-item *ngIf="isAuth">Logout</a>
+    <a mat-list-item *ngIf="isAuth" (click)="onLogout()" style="cursor:pointer" >Logout</a>
 </mat-nav-list>

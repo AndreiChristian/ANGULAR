@@ -27,6 +27,10 @@ export class SidenavListComponent {
     );
   }
 
+  onLogout(){
+    this.authService.logout();
+  }
+
   ngOnDestroy(): void {
     this.authSubscription.unsubscribe();
   }
