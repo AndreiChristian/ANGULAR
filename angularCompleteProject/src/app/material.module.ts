@@ -10,11 +10,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from "@angular/material/list"
-// import {matListItem} from "@angular/material"
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   imports: [
     MatSlideToggleModule,
@@ -31,8 +30,8 @@ import {MatListModule} from "@angular/material/list"
     MatCheckboxModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
-    // matListItem
+    MatListModule,
+    MatTabsModule,
   ],
   exports: [
     MatSlideToggleModule,
@@ -49,7 +48,8 @@ import {MatListModule} from "@angular/material/list"
     MatCheckboxModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
   ],
 })
 export class MaterialModule {}

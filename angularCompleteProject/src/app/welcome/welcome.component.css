@@ -1,0 +1,37 @@
+.welcome {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+mat-card-header {
+  background-color: #c2185b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 20vw;
+  padding: 2vh 2vh;
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+  }
+
+    mat-card-content {
+        width: 70vw;
+        height: fit-content;
+    }
+}
