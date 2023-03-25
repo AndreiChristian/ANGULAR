@@ -12,8 +12,6 @@ export class CurrentTrainingComponent {
   progress = 0;
   timer: any = 0;
 
-  @Output() trainingExit = new EventEmitter();
-
   constructor(
     private dialog: MatDialog,
     private trainingService: TrainingService
@@ -24,11 +22,13 @@ export class CurrentTrainingComponent {
   }
 
   startOrResumeTimer() {
-    const step = (this.trainingService.getRunningExercise().duration / 100) * 1000;
+    const step =
+      (this.trainingService.getRunningExercise().duration / 100) * 1000;
     console.log(this.trainingService.getRunningExercise());
     this.timer = setInterval(() => {
       this.progress = this.progress + 1;
       if (this.progress >= 100) {
+        this.trainingService.completeExercise();
         clearInterval(this.timer);
       }
     }, step);
@@ -44,7 +44,7 @@ export class CurrentTrainingComponent {
 
     dialogRef.afterClosed().subscribe((result) => {
       if (result) {
-        this.trainingExit.emit();
+        this.trainingService.cancelExercise(this.progress);
       } else {
         this.startOrResumeTimer();
       }

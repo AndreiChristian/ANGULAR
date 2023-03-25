@@ -18,6 +18,8 @@ export class TrainingComponent implements OnInit {
       (exercise) => {
         if (exercise) {
           this.onGoingTraining = true;
+        } else {
+          this.onGoingTraining = false;
         }
       }
     );
