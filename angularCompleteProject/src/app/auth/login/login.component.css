@@ -19,7 +19,12 @@ mat-card-content{
     justify-content: center;
 }
 
+mat-card{
+    width: 400px;
+    max-width: 70vw;
+}
 
 .example-full-width {
     width: 100%;
+    
 }
