@@ -1,9 +1,9 @@
-<h3>{{text}}</h3>
+<h3>{{text$ | async }}</h3>
 <div>
   <input type="text" placeholder="Add a custom value!" [(ngModel)]="value" />
-  <button (click)="onAdd()" >Add</button>
+  <button (click)="onAdd()">Add</button>
 </div>
 
 <div>
-  <button (click)="onChangeText()" >Change Text</button>
+  <button (click)="onChangeText()">Change Text</button>
 </div>
