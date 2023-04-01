@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { CounterService } from '../counter.service';
 
 @Component({
   selector: 'app-counter-buttons',
@@ -6,19 +7,17 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./counter-buttons.component.css'],
 })
 export class CounterButtonsComponent {
-  @Output() incrementEvent = new EventEmitter<void>();
-  @Output() decrementEvent = new EventEmitter<void>();
-  @Output() resetEvent = new EventEmitter<void>();
+  constructor(private counterService: CounterService) {}
 
   onIncrement() {
-    this.incrementEvent.emit();
+    this.counterService.increment();
   }
 
   onDecrement() {
-    this.decrementEvent.emit();
+    this.counterService.decrement();
   }
 
   onReset() {
-    this.resetEvent.emit();
+    this.counterService.reset();
   }
 }
