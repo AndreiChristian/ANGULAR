@@ -6,6 +6,10 @@ div{
   margin: 2vh;
 }
 
+h3{
+  text-align: center;
+}
+
 input, button{
   background-color: transparent;
   color: #ccc;
