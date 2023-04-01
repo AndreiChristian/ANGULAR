@@ -1,0 +1,14 @@
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+button{
+  background-color: transparent;
+  border: 2px solid #ccc;
+  font-size: 2rem;
+  color: #ccc;
+}
+
