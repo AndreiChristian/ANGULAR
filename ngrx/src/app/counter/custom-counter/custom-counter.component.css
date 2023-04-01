@@ -1,0 +1,19 @@
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin: 2vh;
+}
+
+input, button{
+  background-color: transparent;
+  color: #ccc;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5vw;
+  font-size: 2rem;
+}
+
+
