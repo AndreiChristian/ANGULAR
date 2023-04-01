@@ -1,0 +1,17 @@
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+  gap: 1vh;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a:hover{
+  border-bottom: 2px solid #ccc;
+}
