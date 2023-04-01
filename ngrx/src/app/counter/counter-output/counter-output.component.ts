@@ -20,6 +20,7 @@ export class CounterOutputComponent implements OnInit {
     this.counter$ = this.store.select('counter');
 
     this.store.select('counter').subscribe((data) => {
+      console.log("counter observable called")
       this.counter = data.counter;
     });
   }

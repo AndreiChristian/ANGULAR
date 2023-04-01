@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { CounterState } from '../store/counter.state';
-import { customIncrement } from '../store/counter.actions';
+import { changeText, customIncrement } from '../store/counter.actions';
 
 @Component({
   selector: 'app-custom-counter',
@@ -16,6 +16,7 @@ export class CustomCounterComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.select('counter').subscribe((data) => {
+      console.log('text observable called!');
       this.text = data.text;
     });
   }
@@ -26,5 +27,9 @@ export class CustomCounterComponent implements OnInit {
         value: +this.value,
       })
     );
+  }
+
+  onChangeText() {
+    this.store.dispatch(changeText());
   }
 }
