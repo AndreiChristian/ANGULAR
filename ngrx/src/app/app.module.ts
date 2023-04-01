@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { PostsListComponent } from './posts/posts-list/posts-list.component';
+import { postsReducer } from './posts/state/posts.reducer';
+import { appReducer } from './store/app.state';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { PostsListComponent } from './posts/posts-list/posts-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    StoreModule.forRoot({ counter: counterReducer }, {}),
+    StoreModule.forRoot(appReducer, {}),
   ],
   providers: [],
   bootstrap: [AppComponent],
