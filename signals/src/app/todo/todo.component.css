@@ -9,20 +9,3 @@
   padding-top: 20vh;
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid palevioletred;
-  /* color: palevioletred; */
-}
-
-input {
-  border: 0;
-  background-color: inherit;
-  outline: 0;
-  color: palevioletred;
-  width: 30vw;
-  margin: 0 2vw;
-  font-size: 20px;
-}

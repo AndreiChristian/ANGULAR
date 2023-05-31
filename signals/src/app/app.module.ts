@@ -10,7 +10,10 @@ import { CounterOutputComponent } from './counter/counter-output/counter-output.
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
 import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
-
+import { TodoInputComponent } from './todo/todo-input/todo-input.component';
+import { TodoListComponent } from './todo/todo-list/todo-list.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +21,17 @@ import { FormsModule } from '@angular/forms';
     CounterOutputComponent,
     CounterButtonsComponent,
     TodoComponent,
+    TodoInputComponent,
+    TodoListComponent,
   ],
   imports: [
+    MatCheckboxModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

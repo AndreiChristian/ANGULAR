@@ -1,8 +1,7 @@
 <div class="container">
   <h1>Signals Todo</h1>
-  <div class="row">
-    <label>New Task</label>
-    <input type="text" />
-    <button mat-button color="primary"><h3>Add</h3></button>
-  </div>
+  <h3>Completed Today: {{completedTodos()}}</h3>
+  <app-todo-input></app-todo-input>
+  <div style="height: 5vh;"></div>
+  <app-todo-list></app-todo-list>
 </div>

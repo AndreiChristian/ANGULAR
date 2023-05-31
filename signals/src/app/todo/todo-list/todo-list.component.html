@@ -1,0 +1,15 @@
+<ng-container *ngIf="todoList().length !=0">
+  <div *ngFor="let todo of todoList()" class="item">
+    <button mat-icon-button (click)="completeTodo(todo.id)">
+      <mat-icon>done</mat-icon>
+    </button>
+    <h3>{{todo.name}}</h3>
+    <div class="spacer"></div>
+    <button mat-icon-button (click)="deleteTodo(todo.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</ng-container>
+<ng-container *ngIf="todoList().length ==0">
+  <h2>No tasks for today</h2>
+</ng-container>

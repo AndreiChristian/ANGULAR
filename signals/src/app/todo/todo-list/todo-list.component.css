@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50vw;
+}
+
+mat-icon {
+  color: palevioletred;
+}
+
+.spacer {
+  flex: 1;
+}
