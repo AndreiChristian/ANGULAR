@@ -2,4 +2,8 @@
   <label>New Task</label>
   <input type="text" [(ngModel)]="inputValue" />
   <button mat-button color="primary" (click)="createNewTodo()"><h3>Add</h3></button>
+  <button mat-icon-button (click)="toggleIsImportant()">
+    <mat-icon *ngIf="isImportant">star</mat-icon>
+    <mat-icon *ngIf="!isImportant">star_bordered</mat-icon>
+  </button>
 </div>

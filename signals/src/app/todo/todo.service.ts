@@ -3,15 +3,16 @@ import { Injectable, WritableSignal, signal } from '@angular/core';
 export interface Todo {
   id: number;
   name: string;
+  important: boolean;
 }
 @Injectable({
   providedIn: 'root',
 })
 export class TodoService {
   todoList: WritableSignal<Todo[]> = signal<Todo[]>([
-    { id: Math.random(), name: 'Learn Signals' },
-    { id: Math.random(), name: 'Realise signals are awsome' },
-    { id: Math.random(), name: 'World Dominance' },
+    { id: Math.random(), name: 'Learn Signals', important: false },
+    { id: Math.random(), name: 'Realise signals are awsome', important: false },
+    { id: Math.random(), name: 'World Dominance', important: true },
   ]);
 
   completedTodos: WritableSignal<number> = signal(0);
