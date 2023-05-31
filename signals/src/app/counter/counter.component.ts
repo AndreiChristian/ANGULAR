@@ -1,22 +1,30 @@
-import { Component, signal } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Signal,
+  WritableSignal,
+  computed,
+  signal,
+} from '@angular/core';
+import { CounterService } from './counter.service';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css'],
 })
-export class CounterComponent {
-  count = signal<number>(0);
+export class CounterComponent implements OnInit {
+  counter: Signal<string>;
 
-  increment() {
-    this.count.update((count) => count + 1);
+  // doubleCount: Signal<s> = computed(() => this.counter() * 2);
+
+  constructor(private counterService: CounterService) {}
+
+  ngOnInit(): void {
+    this.counter = this.counterService.conditionalCount;
   }
 
-  decrement() {
-    this.count.update((count) => count - 1);
-  }
-
-  reset() {
-    this.count.set(0);
+  resetDoubleCount() {
+    // this.doubleCount.set(0) WRONG
   }
 }

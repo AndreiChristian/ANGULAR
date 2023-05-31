@@ -1,9 +1,6 @@
 <div class="container">
-  <h1>Count: {{count()}}</h1>
-  <h1>Double: {{count()*2}}</h1>
+  <h1>{{counter()}}</h1>
   <div class="row">
-    <button mat-stroked-button color="primary" (click)="decrement()"><h3>Decrement</h3></button>
-    <button mat-stroked-button color="primary" (click)="increment()"><h3>Increment</h3></button>
-    <button mat-stroked-button color="primary" (click)="reset()"><h3>Reset</h3></button>
+    <app-counter-buttons></app-counter-buttons>
   </div>
 </div>

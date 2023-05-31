@@ -8,9 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { CounterComponent } from './counter/counter.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
-  declarations: [AppComponent, CounterComponent, CounterOutputComponent, CounterButtonsComponent],
+  declarations: [AppComponent, CounterComponent, CounterOutputComponent, CounterButtonsComponent, TodoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
