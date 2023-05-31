@@ -1,0 +1,32 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2023-05-31 13:35:01
+count workspace : /Volumes/Elements/Learning/ANGULAR/routing_and_auth_gurads
+total files : 20
+total code lines : 12521
+total comment lines : 51
+total blank lines : 162
+
+.editorconfig, code is 13, comment is 1, blank is 3.
+.gitignore, code is 20, comment is 20, blank is 4.
+angular.json, code is 92, comment is 0, blank is 6.
+package-lock.json, code is 11822, comment is 0, blank is 48.
+package.json, code is 38, comment is 0, blank is 0.
+README.md, code is 14, comment is 4, blank is 13.
+src/app/app-routing.module.ts, code is 8, comment is 0, blank is 2.
+src/app/app.component.css, code is 0, comment is 0, blank is 0.
+src/app/app.component.html, code is 390, comment is 22, blank is 72.
+src/app/app.component.spec.ts, code is 31, comment is 0, blank is 4.
+src/app/app.component.ts, code is 9, comment is 0, blank is 1.
+src/app/app.module.ts, code is 16, comment is 0, blank is 2.
+src/assets/.gitkeep, code is 0, comment is 0, blank is 0.
+src/favicon.ico, it is a binary file.
+src/index.html, code is 13, comment is 0, blank is 0.
+src/main.ts, code is 4, comment is 0, blank is 3.
+src/styles.css, code is 0, comment is 1, blank is 0.
+tsconfig.app.json, code is 11, comment is 1, blank is 2.
+tsconfig.json, code is 29, comment is 1, blank is 0.
+tsconfig.spec.json, code is 11, comment is 1, blank is 2.
+===============================================================================

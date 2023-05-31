@@ -1,0 +1,138 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "/Volumes/Elements/Learning/ANGULAR/routing_and_auth_gurads",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2023-05-31 13:35:01",
+            "filesum": 20,
+            "codesum": 12521,
+            "commentsum": 51,
+            "blanksum": 162,
+            "filelist": [
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": ".editorconfig"
+                },
+                {
+                    "blank": 4,
+                    "code": 20,
+                    "comment": 20,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 6,
+                    "code": 92,
+                    "comment": 0,
+                    "filename": "angular.json"
+                },
+                {
+                    "blank": 48,
+                    "code": 11822,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 13,
+                    "code": 14,
+                    "comment": 4,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src/app/app-routing.module.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src/app/app.component.css"
+                },
+                {
+                    "blank": 72,
+                    "code": 390,
+                    "comment": 22,
+                    "filename": "src/app/app.component.html"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src/app/app.component.spec.ts"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src/app/app.component.ts"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src/app/app.module.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "src/assets/.gitkeep"
+                },
+                {
+                    "filename": "src/favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src/index.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src/main.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "src/styles.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "tsconfig.app.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 29,
+                    "comment": 1,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 1,
+                    "filename": "tsconfig.spec.json"
+                }
+            ]
+        }
+    ]
+}
