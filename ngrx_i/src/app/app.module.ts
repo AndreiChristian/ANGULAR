@@ -11,12 +11,14 @@ import { CounterButtonsComponent } from './counter/counter-buttons/counter-butto
 import { MatButtonModule } from '@angular/material/button';
 import { counterReducer } from './counter/state/counter.reducer';
 import { MatIconModule } from '@angular/material/icon';
+import { CustomCounterInputComponent } from './counter/custom-counter-input/custom-counter-input.component';
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     CounterOutputComponent,
     CounterButtonsComponent,
+    CustomCounterInputComponent,
   ],
   imports: [
     BrowserModule,
