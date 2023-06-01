@@ -35,4 +35,11 @@ export class TodoService {
     this.completedTodos.update((value) => value + 1);
     this.deleteTodo(id);
   }
+
+  toggleImportant(id: number) {
+    this.todoList.mutate((value: Todo[]) => {
+      const searchedTodo = value.find((todo) => todo.id === id);
+      searchedTodo.important = !searchedTodo.important;
+    });
+  }
 }

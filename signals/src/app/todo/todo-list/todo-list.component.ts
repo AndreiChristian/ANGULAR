@@ -21,4 +21,8 @@ export class TodoListComponent implements OnInit {
   completeTodo(id: number) {
     this.todoService.completeTodo(id);
   }
+
+  toggleImportant(id: number) {
+    this.todoService.toggleImportant(id);
+  }
 }

@@ -5,8 +5,10 @@
     </button>
     <h3>{{todo.name}}</h3>
     <div class="spacer"></div>
-    <mat-icon *ngIf="!todo.important">star_bordered</mat-icon>
-    <mat-icon *ngIf="todo.important">star</mat-icon>
+    <button mat-icon-button (click)="toggleImportant(todo.id)">
+      <mat-icon *ngIf="!todo.important">star_bordered</mat-icon>
+      <mat-icon *ngIf="todo.important">star</mat-icon>
+    </button>
     <button mat-icon-button (click)="deleteTodo(todo.id)">
       <mat-icon>delete</mat-icon>
     </button>

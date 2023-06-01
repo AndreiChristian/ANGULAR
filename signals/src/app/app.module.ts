@@ -14,6 +14,8 @@ import { TodoInputComponent } from './todo/todo-input/todo-input.component';
 import { TodoListComponent } from './todo/todo-list/todo-list.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatChipsModule } from '@angular/material/chips';
+import { TodoFilterComponent } from './todo/todo-filter/todo-filter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +25,11 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     TodoComponent,
     TodoInputComponent,
     TodoListComponent,
+    TodoFilterComponent,
   ],
   imports: [
     MatCheckboxModule,
+    MatChipsModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
