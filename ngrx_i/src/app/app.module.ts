@@ -8,21 +8,25 @@ import { StoreModule } from '@ngrx/store';
 import { CounterComponent } from './counter/counter.component';
 import { CounterOutputComponent } from './counter/counter-output/counter-output.component';
 import { CounterButtonsComponent } from './counter/counter-buttons/counter-buttons.component';
-
+import { MatButtonModule } from '@angular/material/button';
+import { counterReducer } from './counter/state/counter.reducer';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
     CounterOutputComponent,
-    CounterButtonsComponent
+    CounterButtonsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({ counter: counterReducer }, {}),
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

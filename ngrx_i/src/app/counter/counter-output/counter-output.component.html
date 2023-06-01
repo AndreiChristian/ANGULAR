@@ -1,1 +1,2 @@
-<p>counter-output works!</p>
+<h1 *ngIf="(counter|async).show">The count is {{(counter| async).counter}}</h1>
+<h1 *ngIf="!(counter|async).show">Nothing to see here</h1>
