@@ -1,0 +1,34 @@
+<section>
+  <table cdk-table [dataSource]="dataSource">
+    <ng-container cdkColumnDef="position">
+      <th cdk-header-cell *cdkHeaderCellDef> Position </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="points">
+      <th cdk-header-cell *cdkHeaderCellDef> Name </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.points}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="driver">
+      <th cdk-header-cell *cdkHeaderCellDef> Driver </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.Driver.givenName}}
+        {{element.Driver.familyName}} </td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="constructor">
+      <th cdk-header-cell *cdkHeaderCellDef> Constructor </th>
+      <td cdk-cell *cdkCellDef="let element">{{element.Constructors[0].name}}</td>
+    </ng-container>
+
+    <ng-container cdkColumnDef="wins">
+      <th cdk-header-cell *cdkHeaderCellDef> Wins </th>
+      <td cdk-cell *cdkCellDef="let element"> {{element.wins}} </td>
+    </ng-container>
+
+    <tr cdk-header-row *cdkHeaderRowDef="displayedColumns"></tr>
+    <tr
+      cdk-row
+      *cdkRowDef="let row; columns: displayedColumns; let i = index"></tr>
+  </table>
+</section>

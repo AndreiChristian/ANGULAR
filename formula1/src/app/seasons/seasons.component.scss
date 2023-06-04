@@ -1,0 +1,35 @@
+/* Global settings */
+section {
+  background-color: #2b2a29;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 5vh 0;
+}
+
+/* Table settings */
+table {
+  background: #3c3b37;
+  border-radius: 15px;
+  box-shadow: 7px 7px 15px hsl(60, 3%, 10%), -4px -4px 10px #4d4c4a;
+  width: 90%;
+  margin: 0 auto;
+  border-spacing: 0;
+  color: white;
+}
+
+/* Header row settings */
+th,
+td {
+  padding: 20px;
+  text-align: start;
+  vertical-align: middle;
+}
+
+.cdk-row:hover {
+  background-color: rgba(255, 255, 255, 0.045);
+  border-bottom: 1px solid black;
+}
