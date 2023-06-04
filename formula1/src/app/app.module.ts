@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SeasonsComponent } from './seasons/seasons.component';
 import { CdkTableModule } from '@angular/cdk/table';
+import { SidenavComponent } from './UI/sidenav/sidenav.component';
+import { MobilenavComponent } from './UI/mobilenav/mobilenav.component';
 
 @NgModule({
-  declarations: [AppComponent, SeasonsComponent],
+  declarations: [AppComponent, SeasonsComponent, SidenavComponent, MobilenavComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
