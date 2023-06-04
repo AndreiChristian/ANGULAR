@@ -1,0 +1,28 @@
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+  width: 10vw;
+  box-sizing: border-box;
+  padding: 1vh;
+  background-color: #333;
+  box-shadow: 7px 7px 15px #1a1a1a, -4px -4px 13px #4d4d4d; /* For the neumorphic effect */
+}
+
+aside a {
+  /* Assuming you're using 'a' elements for navigation */
+  background-color: #333;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px #1a1a1a, -3px -3px 6px #4d4d4d; /* For the neumorphic effect */
+  text-decoration: none;
+  color: white; /* So the text is visible on the dark background */
+}
+
+aside a:hover {
+  background-color: #4d4d4d;
+  box-shadow: inset 1px 1px 2px #1a1a1a, inset -1px -1px 2px #4d4d4d; /* Inset shadow for a pressed effect */
+}
